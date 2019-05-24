@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Best City Guide</title>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/flexbox.css">
+	<link rel="stylesheet" href="css/page.css">
+</head>
+<body id="main" onload="document.body.style.opacity='1'">
+	
+	<header class="main-header">
+		<img class="logo" src="img/alphalogo.svg" alt="City">
+		
+	</header><!--/.main-header-->   
+
+	<div class="banner">	
+			<a href="play.html"><button onclick="play()" class="button ">Play</button></a>
+			<a href="howto.html"><button onclick="howto()" class="button ">How to Play</button></a>
+			<a href="about.html"><button onclick="about()" class="button ">About Us</button></a>
+			<a href="help.html"><button onclick="help()" class="button ">Help & Support</button></a>
+		</div>
+		
+	<!--/.banner-->
+	
+<!-- 	<div class="row">		
+		<div class="primary col">
+			<h2>Welcome!</h2>
+			<p>Everything in this city is worth waiting in line for!</p>
+		</div>
+	
+	</div>
+	-->
+<script>
+	
+ function play() {
+    document.getElementById("main").classList.add("fadeout");
+    document.getElementByClass("button").classList.remove("fadein");
+	setTimeout( function() { window.location = "play.html" }, 500 );
+ };
+
+ function about() {
+    document.getElementById("main").classList.add("fadeout");
+    document.getElementByClass("button").classList.remove("fadein");
+	setTimeout( function() { window.location = "about.html" }, 500 );
+ };
+
+ function help() {
+    document.getElementById("main").classList.add("fadeout");
+    document.getElementByClass("button").classList.remove("fadein");
+	setTimeout( function() { window.location = "help.html" }, 500 );
+ };
+
+ function howto() {
+    document.getElementById("main").classList.add("fadeout");
+    document.getElementByClass("button").classList.remove("fadein");
+	setTimeout( function() { window.location = "howto.html" }, 500 );
+ };
+
+</script>
+
+	<footer class="main-footer">
+		<div class="footer-inner">
+			<span>&copy;2019 GabbardDesigns</span>
+			<p>This is a work of digital. Noodles, broth, soup, bowls, forks, spoons, and ingredients are either the products of the designer’s imagination or used in a fictitious manner. Any resemblance to actual soup, nutritious or delicious, or actual food is purely coincidental.</p>
+		</div>
+	</footer>
+	
+</body>
+</html>
+
+
